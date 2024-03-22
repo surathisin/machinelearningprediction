@@ -4,6 +4,12 @@ from django.urls import path, re_path, include
 from accounts import views as accounts_views
 from boards import views
 
+from django.urls import path
+
+from django.contrib import admin
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('accounts.urls')),
