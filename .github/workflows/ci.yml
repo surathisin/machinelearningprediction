@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    env:
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}  # Set the SECRET_KEY environment variable
     steps:
     - uses: actions/checkout@v2
 
